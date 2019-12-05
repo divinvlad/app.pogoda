@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="yearCharacterAnchorPane" prefHeight="583.0" prefWidth="789.0"
+            xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="by.divin.weather.controller.YearCharacterReportController">
+    <children>
+        <ComboBox fx:id="comboBox" layoutX="138.0" layoutY="33.0"/>
+        <Label layoutX="71.0" layoutY="33.0" text="Year"/>
+    </children>
+</AnchorPane>

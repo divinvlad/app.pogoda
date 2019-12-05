@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.divin.weather.controller.CommonReportController">
+    <children>
+        <TableView fx:id="firstReportTable" layoutX="11.0" layoutY="28.0" prefHeight="677.0" prefWidth="794.0">
+            <columns>
+                <TableColumn fx:id="month" prefWidth="75.0" text="Month" />
+                <TableColumn fx:id="temperature" prefWidth="107.0" text="Temperature, °C" />
+                <TableColumn fx:id="windSpeed" prefWidth="114.0" text="Wind speed, m/s" />
+                <TableColumn fx:id="pressure" prefWidth="104.0" text="Pressure, mmHg" />
+                <TableColumn fx:id="sunnyDays" minWidth="9.0" prefWidth="83.0" text="Sunny days" />
+                <TableColumn fx:id="cloudyDays" minWidth="9.0" prefWidth="84.0" text="Cloudy days" />
+                <TableColumn fx:id="rainyDays" minWidth="2.0" prefWidth="70.0" text="Rainy days" />
+                <TableColumn fx:id="snowyDays" minWidth="0.0" prefWidth="78.0" text="Snowy days" />
+                <TableColumn fx:id="stormDays" prefWidth="78.0" text="Storm days" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

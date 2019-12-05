@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="by.divin.weather.controller.ConclusionReportController">
+    <children>
+        <Label layoutX="69.0" layoutY="42.0" text="Summer"/>
+        <Label layoutX="69.0" layoutY="66.0" text="Autumn"/>
+        <Label layoutX="69.0" layoutY="92.0" text="Winter"/>
+        <Label layoutX="69.0" layoutY="119.0" text="Spring"/>
+        <Label layoutX="41.0" layoutY="155.0" text="Pressure difference, mmHg:"/>
+        <Label layoutX="313.0" layoutY="14.0" text="Phenomena difference, days:"/>
+        <Label layoutX="342.0" layoutY="39.0" text="Snow"/>
+        <Label layoutX="342.0" layoutY="63.0" text="Rain"/>
+        <Label layoutX="41.0" layoutY="14.0" text="Temperature difference, °C:"/>
+        <Label layoutX="342.0" layoutY="89.0" text="Storm"/>
+        <Label layoutX="313.0" layoutY="155.0" text="Overcast difference, days:"/>
+        <Label layoutX="342.0" layoutY="178.0" text="Sunny"/>
+        <Label layoutX="342.0" layoutY="200.0" text="Cloudy"/>
+        <TextField fx:id="summerTemperatureDifference" disable="true" layoutX="130.0" layoutY="42.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="autumnTemperatureDifference" disable="true" layoutX="130.0" layoutY="66.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="winterTemperatureDifference" disable="true" layoutX="130.0" layoutY="92.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="springTemperatureDifference" disable="true" layoutX="130.0" layoutY="119.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="pressureDifference" disable="true" layoutX="197.0" layoutY="155.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="snowDayDifference" disable="true" layoutX="418.0" layoutY="39.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="rainDifference" disable="true" layoutX="418.0" layoutY="66.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="stormDifference" disable="true" layoutX="418.0" layoutY="92.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="sunDifference" disable="true" layoutX="418.0" layoutY="178.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+        <TextField fx:id="cloudDifference" disable="true" layoutX="418.0" layoutY="200.0" prefHeight="16.0"
+                   prefWidth="92.0"/>
+    </children>
+</AnchorPane>

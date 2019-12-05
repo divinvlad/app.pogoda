@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="602.0" prefWidth="875.0"
+            xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="by.divin.weather.controller.TemperatureChartReportController">
+    <children>
+        <LineChart fx:id="lineChart" layoutX="14.0" layoutY="90.0" legendVisible="false" prefHeight="490.0"
+                   prefWidth="620.0">
+            <xAxis>
+                <NumberAxis fx:id="xAxis" label="year" side="BOTTOM"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="temperature, °C" side="LEFT"/>
+            </yAxis>
+        </LineChart>
+        <Label layoutX="38.0" layoutY="30.0" text="Month"/>
+        <ComboBox fx:id="comboBox" layoutX="135.0" layoutY="31.0"/>
+        <Label layoutX="634.0" layoutY="27.0" text="Min"/>
+        <TextField fx:id="minTemperatureYear" disable="true" layoutX="738.0" layoutY="52.0" prefWidth="96.0"/>
+        <Label layoutX="634.0" layoutY="55.0" text="Year"/>
+        <Label layoutX="634.0" layoutY="82.0" text="Temperature"/>
+        <TextField fx:id="minTemperature" disable="true" layoutX="738.0" layoutY="79.0" prefWidth="96.0"/>
+        <Label layoutX="634.0" layoutY="150.0" text="Max"/>
+        <TextField fx:id="maxTemperatureYear" disable="true" layoutX="738.0" layoutY="175.0" prefWidth="96.0"/>
+        <Label layoutX="634.0" layoutY="178.0" text="Year"/>
+        <Label layoutX="634.0" layoutY="205.0" text="Temperature"/>
+        <TextField fx:id="maxTemperature" disable="true" layoutX="738.0" layoutY="202.0" prefWidth="96.0"/>
+    </children>
+</AnchorPane>

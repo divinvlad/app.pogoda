@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="608.9998779296875" prefWidth="941.0"
+            xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="by.divin.weather.controller.PressureChartReportController">
+    <children>
+        <LineChart fx:id="lineChart" layoutX="14.0" layoutY="90.0" legendVisible="false" prefHeight="490.0"
+                   prefWidth="620.0">
+            <xAxis>
+                <NumberAxis fx:id="xAxis" label="year" side="BOTTOM"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="pressure, mmHg" side="LEFT"/>
+            </yAxis>
+        </LineChart>
+        <Label layoutX="38.0" layoutY="30.0" text="Month"/>
+        <ComboBox fx:id="comboBox" layoutX="135.0" layoutY="31.0"/>
+        <Label layoutX="634.0" layoutY="108.0" text="Min"/>
+        <TextField fx:id="minPressureYear" disable="true" layoutX="738.0" layoutY="133.0" prefWidth="96.0"/>
+        <Label layoutX="634.0" layoutY="136.0" text="Year"/>
+        <Label layoutX="634.0" layoutY="163.0" text="Pressure"/>
+        <TextField fx:id="minPressure" disable="true" layoutX="738.0" layoutY="160.0" prefWidth="96.0"/>
+        <Label layoutX="634.0" layoutY="231.0" text="Max"/>
+        <TextField fx:id="maxPressureYear" disable="true" layoutX="738.0" layoutY="256.0" prefWidth="96.0"/>
+        <Label layoutX="634.0" layoutY="259.0" text="Year"/>
+        <Label layoutX="634.0" layoutY="286.0" text="Pressure"/>
+        <TextField fx:id="maxPressure" disable="true" layoutX="738.0" layoutY="283.0" prefWidth="96.0"/>
+        <Label layoutX="632.0" layoutY="52.0" text="Normal pressure"/>
+        <Label layoutX="738.0" layoutY="55.0" text="740"/>
+    </children>
+</AnchorPane>
